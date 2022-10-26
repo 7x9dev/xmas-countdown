@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Xmas Countdown | 7x9.dev</title>
+      <link rel="icon" href="data:," />
       <link rel="stylesheet" href="style.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,38 +15,48 @@
       />
    </head>
    <body>
-      <div class="heading">
-         <h1>Christmas is coming!</h1>
+      <audio id="song" src="song.mp3" loop="loop"></audio>
+      <div class="btn">
+         <button id="playBtn">
+            <img src="images/vynil.svg" alt="vynil button" width="60px" />
+         </button>
       </div>
-      <div class="container">
-         <div class="counter">
-            <div class="block">
-               <h2 class="days"></h2>
-               <h6>days</h6>
-            </div>
+
+      <section>
+         <div class="heading">
+            <h1>Christmas is coming!</h1>
          </div>
 
-         <div class="counter">
-            <div class="block">
-               <h2 class="hrs"></h2>
-               <h6>hours</h6>
+         <div class="container">
+            <div class="counter">
+               <div class="block">
+                  <h2 class="days"></h2>
+                  <h6>days</h6>
+               </div>
             </div>
-         </div>
 
-         <div class="counter">
-            <div class="block">
-               <h2 class="min"></h2>
-               <h6>minutes</h6>
+            <div class="counter">
+               <div class="block">
+                  <h2 class="hrs"></h2>
+                  <h6>hours</h6>
+               </div>
             </div>
-         </div>
 
-         <div class="counter">
-            <div class="block">
-               <h2 class="sec"></h2>
-               <h6>seconds</h6>
+            <div class="counter">
+               <div class="block">
+                  <h2 class="min"></h2>
+                  <h6>minutes</h6>
+               </div>
+            </div>
+
+            <div class="counter">
+               <div class="block">
+                  <h2 class="sec"></h2>
+                  <h6>seconds</h6>
+               </div>
             </div>
          </div>
-      </div>
+      </section>
 
       <script src="index.js"></script>
    </body>

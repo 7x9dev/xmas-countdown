@@ -1,18 +1,20 @@
 body {
-   background: linear-gradient(rgba(20, 39, 21, 0.45), rgba(20, 39, 21, 0.45)),
+   background: linear-gradient(rgba(20, 39, 21, 0.4), rgba(20, 39, 21, 0.4)),
       url(images/santa-bg.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    color: #fff;
    height: 100vh;
    margin: 0;
+}
+section {
    padding: 0 140px;
 }
 h1 {
    font-family: "Elsie", cursive;
    font-weight: 900;
    font-size: 90px;
-   margin: 140px 0 0 0;
+   margin: 50px 0
 }
 h2,
 h6 {
@@ -35,7 +37,7 @@ h6 {
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-   margin-top: 250px;
+   margin-top: 240px;
 }
 .counter {
    display: flex;
@@ -52,4 +54,19 @@ h6 {
    flex-direction: column;
    text-align: center;
    margin-bottom: 20px;
+}
+.btn {
+   display: flex;
+   justify-content: end;
+   padding: 10px;
+}
+#playBtn {
+   padding: 0;
+}
+button {
+   background: none;
+   border: none;
+}
+button:hover {
+   cursor: pointer;
 }
