@@ -4,7 +4,7 @@ body {
    background-size: cover;
    background-repeat: no-repeat;
    color: #fff;
-   height: 100vh;
+   min-height: 100vh;
    margin: 0;
 }
 section {
@@ -107,7 +107,15 @@ button:hover {
       margin: 80px 0;
    }
    .container {
-      margin-top: 240px;
+      margin-top: 190px;
+   }
+}
+@media all and (max-width: 1400px) {
+   section {
+      padding: 0 150px;
+   }
+   .counter {
+      margin-bottom: 60px;
    }
 }
 @media all and (max-width: 1280px) {
@@ -120,9 +128,6 @@ button:hover {
    }
    h2 {
       font-size: 90px;
-   }
-   .container {
-      margin-top: 150px;
    }
    .counter {
       width: 240px;
@@ -140,6 +145,9 @@ button:hover {
    }
    h2 {
       font-size: 80px;
+   }
+   .container {
+      margin-top: 150px;
    }
    .counter {
       width: 200px;
@@ -193,16 +201,18 @@ button:hover {
    }
 }
 @media all and (max-width: 414px) {
-   body {
-      height: 100%;
+   section {
+      padding: 0 15px;
    }
    h1 {
-      font-size: 42px;
+      font-size: 40px;
+   }
+   .container {
+      margin-top: 180px;
    }
    .counter {
-      width: 240px;
+      width: 150px;
       height: 160px;
       margin-bottom: 20px;
    }
 }
-
