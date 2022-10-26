@@ -1,0 +1,55 @@
+body {
+   background: linear-gradient(rgba(20, 39, 21, 0.45), rgba(20, 39, 21, 0.45)),
+      url(images/santa-bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: #fff;
+   height: 100vh;
+   margin: 0;
+   padding: 0 140px;
+}
+h1 {
+   font-family: "Elsie", cursive;
+   font-weight: 900;
+   font-size: 90px;
+   margin: 140px 0 0 0;
+}
+h2,
+h6 {
+   font-family: "DM Serif Display", serif;
+   font-weight: 400;
+   margin: 0;
+   line-height: 1.1;
+}
+h2 {
+   font-size: 130px;
+}
+h6 {
+   font-size: 30px;
+}
+.heading {
+   display: flex;
+   justify-content: center;
+}
+.container {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-top: 250px;
+}
+.counter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 300px;
+   height: 310px;
+   background: #cc231e;
+   border-radius: 30px;
+   margin-bottom: 100px;
+}
+.block {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-bottom: 20px;
+}
