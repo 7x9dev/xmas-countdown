@@ -23,11 +23,11 @@ function xmasCountdown() {
    const msInMin = 60 * 1000;
    const msInHr = 60 * 60 * 1000;
    const msInDay = 24 * 60 * 60 * 1000;
-   
+
    const displayDay = Math.floor(timeLeft / msInDay);
    document.querySelector(".days").textContent = displayDay;
 
-   const displayHr = Math.floor(timeLeft%msInDay / msInHr);
+   const displayHr = Math.floor((timeLeft % msInDay) / msInHr);
    document.querySelector(".hrs").textContent = displayHr;
 
    const displayMin = Math.floor((timeLeft % msInHr) / msInMin);
@@ -42,6 +42,13 @@ function xmasCountdown() {
       document.querySelector(".min").textContent = 0;
       document.querySelector(".sec").textContent = 0;
       clearInterval(timerID);
+      newHeading();
    }
 }
 let timerID = setInterval(xmasCountdown, 1000);
+
+function newHeading() {
+   const heading = document.querySelector("h1");
+   heading.textContent = "Ho-Ho-Ho! Merry Christmas!";
+   heading.classList.add("animation");
+}
