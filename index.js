@@ -13,6 +13,15 @@ btn.addEventListener("click", function () {
    }
 });
 
+function rotateImg() {
+   let rotate = document.querySelector("#rotate");
+   if (rotate.style.webkitAnimationPlayState == "running") {
+      rotate.style.webkitAnimationPlayState = "paused";
+   } else {
+      rotate.style.webkitAnimationPlayState = "running";
+   }
+}
+
 //countdown
 function xmasCountdown() {
    const xmasDay = new Date("December 25, 2022 00:00");

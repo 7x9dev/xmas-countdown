@@ -59,11 +59,22 @@ h6 {
 .btn {
    display: flex;
    justify-content: end;
-   padding: 10px;
+   padding: 20px;
 }
 #playBtn {
    padding: 0;
 }
+/* rotate vynil image */
+#rotate {
+   animation: rotation 3s linear 0s infinite;
+   animation-play-state: paused;
+}
+@keyframes rotation {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
 button {
    background: none;
    border: none;
@@ -104,7 +115,7 @@ button:hover {
       padding: 0 200px;
    }
    h1 {
-      margin: 80px 0;
+      margin: 70px 0;
    }
    .container {
       margin-top: 190px;
@@ -115,7 +126,7 @@ button:hover {
       padding: 0 150px;
    }
    .counter {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
    }
 }
 @media all and (max-width: 1280px) {
@@ -206,13 +217,17 @@ button:hover {
    }
    h1 {
       font-size: 40px;
+      margin-top: 160px;
+   }
+   h6 {
+      font-size: 24px;
    }
    .container {
-      margin-top: 180px;
+      margin-top: 30px;
    }
    .counter {
       width: 150px;
       height: 160px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
    }
 }
